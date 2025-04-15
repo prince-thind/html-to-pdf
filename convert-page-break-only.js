@@ -30,6 +30,7 @@ async function generatePdfFromHtml(htmlFilePath, outputPdfPath) {
       printBackground: true,
       height: `${totalHeight}px`,
       margin: { top: "20px", right: "20px", bottom: "20px", left: "20px" },
+      timeout: 60000,
     });
 
     await browser.close();

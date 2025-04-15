@@ -16,6 +16,7 @@ async function generatePdfFromHtml(htmlFilePath, outputPdfPath) {
       printBackground: true,
       format: "A4", // or other standard PDF format, e.g., "Letter", "Legal"
       margin: { top: "20px", right: "20px", bottom: "20px", left: "20px" },
+      timeout: 60000,
     });
 
     await browser.close();
